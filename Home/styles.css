@@ -166,7 +166,7 @@
 /* header */
 #home-header {
     height: 115vh;
-    background: url('images/home_welcome.webp') no-repeat center center/cover;
+    background: url('../images/home_welcome.webp') no-repeat center center/cover;
 }
 
 #home-welcome {
@@ -232,7 +232,7 @@
 
 /* services */
 #home-about-services {
-    background: url('images/flowers-pattern.svg') center;
+    background: url('../images/flowers-pattern.svg') center;
     background-color: #2E4E2A;
     display: flex;
     flex-direction: column;
