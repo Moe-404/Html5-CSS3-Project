@@ -651,6 +651,13 @@
         display: flex;
         justify-content: center;
     }
+
+    .testimonials-grid{
+        margin: auto;
+        /* cards in center */
+        
+    }
+
     
 }
 
