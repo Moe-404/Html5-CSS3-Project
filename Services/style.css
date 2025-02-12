@@ -1,0 +1,695 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Sen", sans-serif;
+}
+
+
+/* utility classes */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-27 {
+    width: 22%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media (max-width:1340px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (max-width:576px) {
+    .col-sm-1 {
+        width: 8.33%;
+    }
+
+    .col-sm-2 {
+        width: 16.66%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.33%;
+    }
+
+    .col-sm-5 {
+        width: 41.66%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.33%;
+    }
+
+    .col-sm-8 {
+        width: 66.66%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.33%;
+    }
+
+    .col-sm-11 {
+        width: 91.66%;
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}
+
+
+
+#services {
+    background: url('images/flowers-pattern.svg') center;
+    background-color: #e9ede9 !important;
+    padding: 120px 5%;
+
+}
+
+#services .BeautifulNatureText h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+#services .BeautifulNatureText p {
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+}
+
+
+
+.description p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.browse-link {
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    transition: color 0.3s ease;
+}
+
+.browse-link:hover {
+    color: #A7B5A6;
+}
+
+.card {
+    background: #ffffff;
+    padding: 40px 30px;
+    text-align: center;
+    transition: 0.3s ease;
+}
+
+.cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.Testimonials-cards-grid {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.card:hover {
+    background: #4B7345;
+}
+
+.card:hover h3,
+.card:hover p {
+    color: white;
+}
+
+.card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 25px;
+}
+
+
+.card h3 {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #000000;
+    line-height: 1.4;
+}
+
+
+#plant-info {
+    background: #ffffff;
+    padding: 120px 5%;
+}
+
+.plant-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    gap: 60px;
+    align-items: center;
+}
+
+
+
+.plant-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+#plant-info .section-label {
+    color: #5A8139;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+#plant-info h2 {
+    font-size: 32px;
+    color: #2E4E2A;
+    margin-bottom: 30px;
+    line-height: 1.3;
+}
+
+.main-description {
+    font-size: 16px;
+    color: #5A5A5A;
+    line-height: 1.6;
+    margin-bottom: 40px;
+}
+
+.plant-faq {
+    margin-bottom: 40px;
+}
+
+.faq-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px 0;
+    border-bottom: 1px solid #E6EBE5;
+}
+
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+.plus-icon {
+    color: #5A8139;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.details-link {
+    display: inline-block;
+    color: #5A8139;
+    text-decoration: none;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.3s ease;
+}
+
+.details-link:hover {
+    color: #2E4E2A;
+}
+
+.details-link::after {
+    content: '→';
+    margin-left: 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.details-link:hover::after {
+    transform: translateX(5px);
+}
+
+.container-video-link {
+    width: 80%;
+}
+
+#video-link {
+    background: #2E4E2A;
+    width: 100%;
+}
+
+.container-video-link {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.container-video-link img {
+    margin: auto;
+    width: 100%;
+}
+
+.container-video-link p {
+    font-size: 18px !important;
+    line-height: 1.6;
+    margin: auto;
+    width: 80%;
+    color: #2E4E2A;
+    margin-top: 100px;
+}
+
+
+.testimonials-section {
+    margin-top: 100px;
+    background: url('Services/flowers-pattern.svg') center;
+    background-color: #2E4E2A !important;
+    padding: 120px 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.section-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-title {
+    font-size: 32px;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 60px;
+    line-height: 1.3;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.testimonial-card {
+    background: #41663c !important;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card img {
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.testimonial-card {
+    .testimonial-img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+}
+
+.quote-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #ffffff;
+    margin-bottom: 25px;
+}
+
+.client-name {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 0;
+}
+
+.BeautifulNature-label {
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.BeautifulNature{
+    margin-top: 100px;
+    width: 90%;
+    margin: 200px auto;
+}
+
+.BeautifulNatureText{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.BeautifulNatureText h2 {
+    line-height: 1.6;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.BeautifulNature p{
+    font-size: 15px;
+    line-height: 1.6;
+    color: black;
+    margin-bottom: 25px;
+}
+
+.BeautifulNatureImg{
+    display: flex;
+    justify-content: right;
+}
+
+.BeautifulNatureImg .left img {
+        width: 90%;
+}
+
+.BeautifulNatureImg .right img {
+        margin: 10px 0;
+        width: 100%;
+}
+
+
+.left {
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.show-more{
+    font-size: 18px;
+    font-weight: 500;
+    background-color: #5A8139;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 50px;
+    width: 35%;
+}
+
+
+
+@media (max-width: 1024px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .cards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    #services .BeautifulNatureText p {
+        text-align: center;
+
+    }
+}
+
+@media (max-width: 768px) {
+    #services {
+        padding: 80px 5%;
+    }
+
+    .section-title {
+        font-size: 32px;
+        margin-bottom: 40px;
+    }
+
+    .cards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        padding: 30px 20px;
+    }
+
+    #services .BeautifulNatureText p {
+        text-align: center;
+
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    .BeautifulNatureText{
+        align-items: center;
+    }
+    .BeautifulNatureText h2 {
+        /* center */
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .BeautifulNature p{
+        /* center */
+        text-align: center;
+    }
+    .show-more{
+        margin: auto;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    .testimonials-section {
+        padding: 80px 0;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .section-title {
+        font-size: 28px;
+        margin-bottom: 40px;
+    }
+
+    .BeautifulNature p,h2{
+        /* center */
+        text-align: center;
+    }
+
+    .BeautifulNatureImg{
+        display: flex;
+        justify-content: center;
+    }
+
+    .testimonial-card {
+        padding: 30px;
+    }
+    .BeautifulNatureImg .left img{
+        width: 100%;
+    }
+    .show-more{
+        margin: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .BeautifulNatureImg .left img{
+        width: 100% !important;
+    }
+    .show-more{
+        margin: auto;
+        width: 50% !important;
+    }
+
+}
+
+
+@media (max-width: 1024px) {
+    .plant-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .plant-image {
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .BeautifulNature p,h2{
+        /* center */
+        text-align: center;
+    }
+
+    .BeautifulNatureImg{
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 768px) {
+    #plant-info {
+        padding: 80px 5%;
+    }
+
+    #plant-info h2 {
+        font-size: 28px;
+    }
+
+    .faq-item p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width: 1010px) and (max-width: 1340px) {
+    #services {
+        margin: auto;
+        text-align: center ;
+    }
+    .services-cards {
+        display: flex !important;
+        justify-content: center !important;
+    }
+    .show-more {
+        margin: auto;
+    }
+
+    .BeautifulNature p,h2{
+        /* center */
+        text-align: center;
+    }
+
+    .BeautifulNatureImg{
+        display: flex;
+        justify-content: center;
+    }
+
+    
+}
