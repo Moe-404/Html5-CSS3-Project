@@ -13,7 +13,7 @@
     background: transparent;
 }
 .headerimg{
-    background-image: url(../resources/hero.webp);
+    background-image: url(../images/hero.webp);
     background-size: cover;
 }
 /* Navbar Styling */

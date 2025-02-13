@@ -555,3 +555,134 @@ footer {
         font-size: 28px;
     }
 }
+
+
+/* Top Social Bar */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+}
+.headerimg{
+    background-image: url(../images/hero.webp);
+    background-size: cover;
+}
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+    padding-left: 40px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+/* .nav-links .active a {
+    border-bottom: 2px solid yellowgreen;
+} */
+
+.nav-links a:active{
+    border-bottom: 2px solid yellowgreen;
+}
+
+/* Call to Action Button */
+.cta-button button {
+    background: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Menu (Hidden by Default) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    color: white;
+    text-align: center;
+}
+
+.hero h4 a{
+    color: yellowgreen;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-size: 20px;
+    
+}
+.hero h4 a:hover{
+    color: rgb(115, 153, 40);
+    
+}
+
+.hero h1 {
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .cta-button {
+        display: none;
+    }
+}
