@@ -1,0 +1,760 @@
+/* Reset Defaults */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Top Social Bar */
+.top-bar {
+    display: flex;
+    justify-content: flex-end;
+    background: transparent;
+}
+.headerimg{
+    background-image: url(../resources/hero.webp);
+    background-size: cover;
+}
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+
+
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/* Logo */
+.logo img {
+    height: 40px;
+    padding-left: 40px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.nav-links li {
+    padding: 10px;
+    font-size: 14px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: yellowgreen;
+    text-decoration: underline;
+}
+
+/* .nav-links .active a {
+    border-bottom: 2px solid yellowgreen;
+} */
+
+.nav-links a:active{
+    border-bottom: 2px solid yellowgreen;
+}
+
+/* Call to Action Button */
+.cta-button button {
+    background: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Mobile Menu (Hidden by Default) */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 120px;
+    color: white;
+    text-align: center;
+}
+
+.hero h4 a{
+    color: yellowgreen;
+    text-decoration: none;
+    text-decoration-style: none;
+    font-size: 20px;
+    
+}
+.hero h4 a:hover{
+    color: rgb(115, 153, 40);
+    
+}
+
+.hero h1 {
+    padding-top: 20px;
+    font-size: 60px;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .cta-button {
+        display: none;
+    }
+}
+
+
+/* Two-Column Section */
+.inspiration-section {
+    display: flex;
+    width: 80%;
+    height: 40%;
+    margin: 50px auto;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Image Section */
+.image-container {
+    width: 50%;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Text Section */
+.text-container {
+    width: 50%;
+    background: #1e3a1e; /* Dark green */
+    color: white;
+    padding: 50px;
+    background-image: url(../resources/flowers-pattern-1-white.svg);
+    opacity: 0.9 !important;
+    background-size: cover;
+}
+
+.text-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.text-container p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+
+}
+
+.ceo-name {
+    font-weight: bold;
+}
+
+.signature {
+    padding-top: 20px;
+    width: 200px;
+
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .inspiration-section {
+        flex-direction: column;
+    }
+
+    .image-container, .text-container {
+        width: 100%;
+    }
+
+    .text-container {
+        padding: 30px;
+        text-align: center;
+    }
+}
+
+/* Team Section */
+.team-section {
+    padding: 50px;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-subtitle {
+    font-size: 14px;
+    color: #3a5a3a;
+    font-weight: bold;
+    letter-spacing: 1px;
+    align-self: center;
+    justify-self: center;
+}
+
+.team-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #1e1e1e;
+    align-self: center;
+    justify-self: center;
+}
+
+/* Team Container */
+.team-container {
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Individual Team Members */
+.team-member {
+    width: 400px;
+    text-align: center;
+}
+
+.team-member img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.team-member h3 {
+    margin-top: 15px;
+    font-size: 1.4rem;
+    color: #1e1e1e;
+}
+
+.team-member .role {
+    font-size: 0.9rem;
+    color: #3a5a3a;
+    font-weight: bold;
+    margin-top: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .team-container {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+.stats{
+    padding: 20px;
+    background-color: #3a5a3a;
+    background-image: url(../resources/flowers-pattern-1-white.svg);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 40px;;
+
+}
+.stats .about{
+    font-size: 20px;
+    color: white;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+
+.stats :nth-child(1){
+    padding-top: 20px;
+    font-size: 20px;
+    color: #c5d8c5;
+}
+.stats :nth-child(2){
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.stats :nth-child(3){
+    font-size: 40px;
+    color: white;
+    text-align: center;
+}
+.about-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    gap: 80px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cell{
+    background-color: #447144;
+    width: 400px;
+    height: 300px;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.cell div{
+    margin: 0;
+    padding: 10px;
+    font-size: 10px;
+    font-weight: 600;
+    color: white;
+}
+
+.cell img{
+    padding-top:0;
+    margin-top: 0;
+}
+
+
+@media (max-width: 768px) {
+    .stats {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr; /* Single column layout for small screens */
+        gap: 40px;
+    }
+
+    .cell {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+
+.newsletter-section {
+    background-image: url('https://startersites.io/blocksy/floreo/wp-content/uploads/2022/01/subscribe-form-cover_optimized.webp');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    max-width: 1290px;
+    height: 533px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+.newsletter-content {
+    padding-top: 50px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.newsletter-content .subtitle {
+    color: #5A8139;
+    font-size: 14px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.newsletter-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.newsletter-content p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.newsletter-form input {
+    flex: 1;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 4px;
+}
+
+.newsletter-form button {
+    background-color: #5A8139;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #4a6c2f;
+}
+
+@media (max-width: 576px) {
+    .newsletter-form {
+        flex-direction: column;
+    }
+    
+    .newsletter-content h2 {
+        font-size: 28px;
+    }
+}
+
+
+/* //////////////////////////////Products CSS////////////////////////////// */
+
+.products{
+    max-width: 1000px;
+    width: 800px;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    grid-template-rows: repeat(2, 6fr);
+    gap: 20px 20px;
+   
+}
+
+.product_cell{
+    padding: 20px 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+}
+
+.products .textbold{
+    font-weight: 600;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+
+.products .text{
+    font-size: 14px;
+    margin: 10px;
+}
+
+.products .text .discount{
+    color: gray;
+    text-decoration: line-through;
+}
+
+
+.products div img{
+    width: 300px;
+    height: 400px;
+    background-color: rgb(221, 221, 221);
+}
+
+.products div img:hover{
+    transform: scale(1.1);
+    transition:  opacity .5sease, transform .5sease;
+    transition-behavior: normal, normal;
+    transition-duration: 0.5s, 0.5s;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+    transition-property: opacity, transform;
+}
+
+
+
+.product_cell button{
+    color: white;
+    font-size: 1em;
+    background-color: #5a8139;
+    margin-top: 20px;
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.rating{
+    padding-bottom: 20px;
+}
+
+
+@media (max-width: 1024px) {
+    .products {
+        grid-template-columns: repeat(2, 1fr); /* Two columns for tablets */
+        width: 100%;
+    }
+
+    .product_cell {
+        width: 100%;
+    }
+
+    .products div img {
+        width: 100%;
+        height: auto;
+    }
+}
+
+/* ///////////////////Footer/////////////////// */
+
+footer {
+
+    background-color: #F7F7F7;
+
+
+    li {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        color: #8E98A0;
+        font-weight: 400;
+        font-size: 16px;
+        list-style: none;
+    }
+
+    .container {
+        margin: auto;
+
+        .upper-footer {
+            display: flex;
+            flex-direction: row;
+            padding-block: 100px;
+
+        }
+
+        h4 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #192C27;
+            margin-bottom: 15px;
+        }
+
+        .footer-first {
+            img {
+                margin-bottom: 15px;
+                width: 80px;
+                height: 40px;
+            }
+
+            .item {
+                margin-block: 15px;
+            }
+        }
+
+        .payment-image {
+            width: 280px;
+            height: 26px;
+        }
+
+        .lower-footer {
+            padding-block: 50px;
+            display: flex;
+            justify-content: space-between;
+
+            hr {
+                border: 1px solid #F2F2F2;
+            }
+
+            .social {
+                i {
+                    margin-left: 15px;
+                }
+            }
+        }
+
+        p {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 400;
+            font-size: 15px;
+            color: #434F58;
+        }
+    }
+}
+
+
+
+/* utility classes */
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-27 {
+    width: 22%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+@media (max-width:1340px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+}
+
+@media (max-width:576px) {
+    .col-sm-1 {
+        width: 8.33%;
+    }
+
+    .col-sm-2 {
+        width: 16.66%;
+    }
+
+    .col-sm-3 {
+        width: 25%;
+    }
+
+    .col-sm-4 {
+        width: 33.33%;
+    }
+
+    .col-sm-5 {
+        width: 41.66%;
+    }
+
+    .col-sm-6 {
+        width: 50%;
+    }
+
+    .col-sm-7 {
+        width: 58.33%;
+    }
+
+    .col-sm-8 {
+        width: 66.66%;
+    }
+
+    .col-sm-9 {
+        width: 75%;
+    }
+
+    .col-sm-10 {
+        width: 83.33%;
+    }
+
+    .col-sm-11 {
+        width: 91.66%; 
+    }
+
+    .col-sm-12 {
+        width: 100%;
+    }
+}
